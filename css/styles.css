@@ -1,0 +1,359 @@
+@import url(https://fonts.googleapis.com/css?family=Arvo:400,700|Lato:400,400i)
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    position: relative;
+    
+}
+
+h1,h2, h3,h4,h5,h6 {
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.page h2 {
+    color: white;
+    padding-top: 35px;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
+.page h3 {
+    color: white;
+    font-size: 1.3em;
+    
+}
+
+.page p {
+    color: white;
+}
+
+
+/** Header Navigation **/
+
+header .navbar {
+    padding: 30px 0;
+    transition: all .5s ease-out;
+}
+
+header .navbar-default {
+    background-color: transparent;
+    border: none;
+}
+
+header .navbar-default .navbar-nav a {
+    color: white;
+    padding: 5px 8px;
+}
+
+header .navbar-default .navbar-nav a:hover {
+    color: #ed145b;
+}
+
+header .navbar-default .navbar-nav .active a {
+    font-weight: 700;
+    color: #ed145b;
+    background: transparent;
+    border-bottom: 4px solid #7b0046;
+    text-shadow: none;
+}
+
+header .navbar-default .navbar-nav .active a:hover {
+    color: #ed145b;
+    background: transparent;
+    text-shadow: none;
+}
+
+/** Navbar Brand **/
+header .navbar-brand {
+    background: url(../images/WildGardenLogo.svg);
+    background-repeat: no-repeat;
+    padding: none;
+    background-size: 300px;
+    background-position: -35px, 10px; 
+    height: 6em;
+    width: 13em;
+}
+
+/** Nav Inbody **/
+
+header .inbody {
+    background: rgba(0,0,0,.6);
+}
+
+header .navbar.inbody {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+header .navbar.inbody .navbar-nav {
+    padding-top: 10px;
+}
+
+header .inbody .navbar-brand {
+    display: none;
+    background: url(../images/WildGardenLogo2.svg);
+    background-repeat: no-repeat;
+    background-position: -25px, 10px; 
+    background-size: 275px;
+    height: 3em;
+    width: 13em;
+}
+
+#featured .item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+/** Navbar Toggle **/
+header .navbar-toggle {
+    background-color: #7b0046;
+}
+
+header .navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    header .navbar-collapse.in {
+        background-color: rgba(0,0,0,.5);
+    }
+}
+/** Carousel Fade **/
+.carousel.fade {
+    opacity: 1;
+}
+
+.carousel.fade .item {
+    transition: opacity ease-out .7s;
+    left: 0;
+    opacity: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    display: block;
+}
+
+.carousel.fade .item:first-child {
+    top: auto;
+    opacity: 0;
+    position: relative;
+}
+
+.carousel.fade .item.active {
+    opacity: 1;
+}
+
+.carousel-control {
+    opacity: 0;
+}
+
+
+
+
+
+/** Page -- Mission **/
+
+#mission {
+    background-color: #7b0046;
+    background-image: linear-gradient(to bottom, #7b0046, #ed145b);
+    border-top: 5px solid #ed145b;
+    padding-bottom: 35px;
+}
+
+/** Page -- Services **/
+
+#service {
+    background-color: #362f2d;
+    background-image: url(../images/WildGardenGraphic.png);
+    border-top: 5px solid #1d1715;
+    text-align: center;
+}
+
+#service .icon {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#service h3 {
+    margin-bottom: 10px;
+}
+
+#service p {
+    margin-bottom: 30px;
+}
+
+@media only screen
+    and (min-width: 450px)
+    and (max-width: 768px) {
+        .service p{
+            padding: 0, 20%;
+        }
+}
+
+
+
+/** Page -- Staff **/
+
+#staff {
+    background-color: #7b0046;
+    background-image: linear-gradient(to bottom, #7b0046, #ed145b);
+    border-top: 5px solid #ed145b;
+    padding-bottom: 35px;
+    text-align: center;
+}
+
+#staff h3 {
+    margin-bottom: 10px;
+    Margin-top: 20px;
+}
+
+/** Page -- Testimonials **/
+
+#testimonials {
+    border-top: 5px solid #1d1715;
+    padding: 0;
+}
+
+#testimonials h2 {
+    display: none;
+}
+
+#testimonials blockquote {
+    margin: 0;
+    padding: 0;
+    border-left: none;
+    min-height: 500px;
+    position: relative;
+}
+
+#testimonials blockquote .quote {
+    background-color: rgba(73,127,41, .6);
+    padding: 20px 5%;
+    position: absolute;
+    bottom: 0;
+    width: 75%;
+    font-weight: 400;
+    border-radius: 0 50px 0 0;
+}
+
+#testimonials blockquote .quote:hover {
+    background-color: rgba(52,90,29, .7);
+}
+
+#testimonials #garden {
+    background: url(../images/Testimonial1.jpg) no-repeat center center;
+    background-size: cover;
+    border-right: 2px solid #1d1715;
+}
+
+#testimonials #selection {
+    background: url(../images/Testimonial2.jpg) no-repeat center center;
+    background-size: cover;
+    border-right: 2px solid #1d1715;
+}
+
+#testimonials #harvest {
+    background: url(../images/Testimonial3.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#testimonials .quote {
+    color: white;
+    font-family: lato, sans-serif;
+    font-style: italic;
+    font-size: 1.1em;
+    line-height: 120%;
+    font-weight: 100;
+}
+
+#testimonials .quote .more, #testimonials .quote .customer {
+    opacity: 0;
+    font-size: 0;
+    line-height: 0;
+    padding-top: 10px;
+}
+
+#testimonials .quote:hover .more {
+    font-family: "aldo", sans-serif;
+    font-weight: 100;
+    display: block;
+    opacity: 1;
+    font-size: .8em;
+    line-height: 120%;
+}
+
+#testimonials .quote .intro::after {
+    content: '…';
+}
+
+#testimonials .quote:hover .intro::after {
+    content: '';
+}
+
+/** Footer **/
+
+footer {
+    background: #362f2d;
+    border-top: 5px solid #1d1715;
+    color: white;
+    font-size: 1em;
+    padding 20px 0 40px 0;
+}
+
+footer a {
+    color: #E0E6AE;
+}
+
+footer a:hover {
+    color: #ed145b !important;
+}
+
+footer .col-md-12 {
+    margin-top: 25px;
+    text-decoration: none;
+}
+
+footer .btn-primary{
+    background-color: #7b0046;
+    text-transform: uppercase;
+    width: 250px;
+    border: 2px solid #ed145b;
+    border-radius: 5px;
+    font-family: arvo, sans-serif;
+    font-size: 1.5em;
+    padding-top: 10px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+footer .btn-primary:hover {
+    background-color: #7b0046;
+    border: 2px solid #ed145b;
+    filter: brightness(85%)
+}
+
+footer #termsPrivacy {
+    float: right;
+}
+
+/** Footer Navigation**/
+    
+footer .navbar-default {
+    background: transparent;
+    border: none;
+}
+  
+.page {
+    padding; 50px 0;
+}
